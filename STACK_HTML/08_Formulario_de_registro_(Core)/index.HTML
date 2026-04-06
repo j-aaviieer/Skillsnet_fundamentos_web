@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord</title>
+    </head>
+    <body>
+        <h1>Crear una cuenta en Discord</h1>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo">
+        </div>
+        <br>
+        <div>
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave">
+        </div>
+        <br>
+        <div>
+            <label for="conf_clave">Confirmar contraseña:</label>
+            <input type="password" id="conf_clave" name="conf_clave">
+        </div>
+        <br>
+        <div>
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac">
+        </div>
+        <br>
+        <div>
+            <label for="genero">Género:</label>
+            <input type="radio" id="masculino" name="genero_masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="femenino" name="genero_femenino" value="femenino">
+            <label for="femenino">Femenino</label>
+            
+            <input type="radio" id="otro" name="prefiero_no_decirlo" value="otro">
+            <label for="otro">Prefiero no decirlo</label>
+        </div>
+        <br>
+        <div>
+            <label for="desc">Descripción sobre ti:</label><br>
+            <textarea id="desc" name="desc_de_ti" rows="5" cols="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="intereses">Selecciona tus intereses:</label><br>
+            <select id="intereses" name="seleccionar_intereses">
+                <option value="musica">Música</option>
+                <option value="peliculas">Películas</option>
+                <option value="deportes">Deportes</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="acepto" name="acepto">
+            <label for="acepto">Al registrarte, aceptas los <a href="https:discord.com/terms" target="_blank">Términos y Condiciones</a> de Discord.</label>
+        </div> 
+        <br>
+        <div>
+            <input type="submit" value="Registrarse">
+        </div>
+    </body>
+</html>
