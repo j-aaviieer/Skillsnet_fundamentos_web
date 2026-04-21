@@ -1,0 +1,41 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+.centrado{
+      text-align: center;
+}
+.encabezado{
+      padding: 40px;
+}
+.titulo{
+      margin-bottom: 20px;
+}
+.centrado a{
+
+      text-decoration: none ;
+}
+.container{
+      width: 950px;
+      margin: 0 auto;
+}
+.caja{
+      display: inline-block; /* elementos en bloques*/
+      padding: 40px 20px;
+      color:white;
+      font-weight: bold;
+      width: 300px;
+      height: 100px;
+      border-radius: 10px;
+}
+.azul{
+      background-color:#478DD3 ;
+}
+.rojo{
+      background-color:#E74239 ;
+}
+.verde{
+      background-color:#5FC66B ;
+}
