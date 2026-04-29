@@ -1,4 +1,5 @@
 *{
+      outline: solid 1px midnightblue;
       padding:0;
       margin:0;
       box-sizing: border-box;
@@ -18,7 +19,9 @@
       padding: 20px;
       width: 900px;
 }
-
+.row{
+      padding: 30px;
+}
 .aceptar{
       width: 100px;
       height: 50px;
@@ -41,4 +44,112 @@
       color: green;
       margin-top: 15px;
       font-style:italic;
+}
+
+/*
+Manejo del contenido con overflow: hidden, scroll, auto
+*/
+
+.caja{
+      width: 200px;
+      height: 100px;
+      display:inline-block
+}
+
+.example1{
+      width: 300px;
+      height: 100px;
+      background-color: yellow;
+}
+
+.example2{
+      width: 300px;
+      height: 100px;
+      background-color: green;
+}
+
+.example3{
+      width: 300px;
+      height: 100px;
+      background-color: blue;
+}
+
+.hidden{
+      overflow: hidden;
+}
+.scroll {
+      overflow: scroll;
+}
+.auto {
+      overflow: auto;
+}
+
+/*🎨 Fondo y colores*/
+.banner{
+      height: 600px;
+      width: 100%;
+background: red url(https://www.cafemaisgeek.com/wp-content/uploads/2021/04/JoJo-Diamond-Is-Unbreakable-Banner-1.jpg)  no-repeat fixed center center;
+background-size: 90%;
+}
+
+/*🟫 Bordes y estilos*/
+
+.cancelar{
+      border: 2px dotted rgb(255, 0, 0);
+      display: inline-block;
+      padding: 15px;
+}
+
+.articulo{
+      border: 1px solid black;
+      height: 50px;
+      width: 100px;
+      display: inline-block;
+/*🟢 Bordes redondeados*/
+
+}
+.boton_redondeado{
+      padding: 10px 20px;
+      border-radius: 15px;
+}
+
+.caja_redondeada{
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      padding: 10px 16px;
+      background-color: midnightblue;
+      color: white;
+      border-radius: 50%;
+}
+
+.cajitas{
+      width: 150px;
+      height: 40px;
+      outline: solid 1px midnightblue;
+}
+.cajita1{
+      background-color: rgb(104, 104, 221);
+      color: white;
+      padding: 10px;
+}
+.cajita2{
+      background-color: lightseagreen;
+      color: white;
+      padding-top: 0px;
+      padding-right: 5px;
+      padding-bottom: 0px;
+      padding-left: 5px;
+      /* padding: 0px 5px 0px 5px;*/
+}
+.cajita3{
+      background-color: rgb(73, 125, 142);
+      color: white;
+      margin: 10px;
+}
+.cajita4{
+      background-color: cornflowerblue;
+      color: white;
+      margin: 0px 20px;
+      padding: 5px 0px;
 }
