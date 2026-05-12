@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.item{
+    background-color: gray;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
