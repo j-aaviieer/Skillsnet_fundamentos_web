@@ -34,7 +34,7 @@ body {
     box-shadow: 0 15px 95px rgb(117, 117, 117);
     transform: scale3d(1.1, 1.1, 2); 
 }
-.tarjeta h2 {
+.tarjeta h1 {
     margin-top: 70px;
     font-size: 1.5rem;
     color: rgb(61, 61, 61);
