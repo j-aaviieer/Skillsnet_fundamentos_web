@@ -7,6 +7,11 @@
 body {
     background-color: rgb(235, 240, 241);
 }
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +20,12 @@ body {
     padding: 15px;
     background-color: rgb(44, 61, 80);
     color: white;
+}
+.header h1 {
+    cursor: pointer;
+}
+.header h1:hover {
+    color: rgb(211, 211, 211);
 }
 .buttons {
     display: flex;
@@ -46,6 +57,8 @@ body {
 .buttons a:hover {
     color: gainsboro;
 }
+
+/* contenido de página --------------------------------------------------------------------*/
 .main {
     padding: 40px;
 }
@@ -58,34 +71,200 @@ body {
     gap: 7px;
     background-color: white;
     box-shadow: 0px 2px 20px 5px rgb(207, 207, 207);
-    padding: 40px;
-    width: 40%;
+    height: 100%;
+    width: 60%;
     border-radius: 7px;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.perfil:hover {
+    transform:scale(1.01);
 }
 .perfil h1 {
     font-size: 25px;
 }
 .dividiv-jr {
-    padding-top: 120px;
-}
-.azul {
+    align-items: center;
+    padding-top: 65px;
+    position: relative;
     display: flex;
-    justify-content: center;
-    position: absolute;
-    background-color: rgba(49, 153, 218, 0.404);
-    width: 100%;
+    flex-direction: column;
+    gap:10px;
+    padding-bottom: 40px;
 }
-.foto {
+
+.dividiv-jr img {
+    position: absolute;
     width: 130px;
     height: 130px;
     border-radius: 50%;
     border: 6px rgb(22, 19, 19);
+    top:-80px;
+    transition: transform 0.2s ease;
 }
+.dividiv-jr img:hover {
+    transform: scale(1.06);
+    border: 1px black solid;
+}
+.azul {
+    background-color: rgba(49, 153, 218);
+    height: 150px;
+    width: 100%;
+}
+
 .subtitulo {
     color: gray;
 }
 .editar {
     color: rgb(42, 133, 190);
     text-decoration: none;
+    font-weight: bold;
+}
+.foto-pequeña {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.foto-pequeña:hover {
+    transform: scale(1.06);
+    border: 1px solid black;
+}
+.tarjeta-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    gap: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px 5px rgb(207, 207, 207);
+    transition: transform 0.2s ease;
+}
+.tarjeta-arriba:hover {
+    transform: scale(1.06);
+}
+.title-right {
+    margin-right: 20px;
+}
+.tarjeta-abajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 20px 5px rgb(207, 207, 207);
+    transition: transform 0.2s ease;
+}
+.tarjeta-abajo:hover {
+    transform: scale(1.06);
+}
+.button-yes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: rgb(233, 84, 38);
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.button-yes:hover {
+    background-color: red;
+    border: 2px solid rgb(129, 0, 0);
+    transform: scale(1.2);
+}
+.button-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: rgb(46, 146, 99);
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.button-no:hover {
+    background-color: rgb(0, 192, 26);
+    border: 2px solid rgb(10, 124, 0);
+    transform: scale(1.2);
+}
+.titulo-nombres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nombres-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    width: 100%;
+}
+.nombres-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-weight: bold;
+    cursor: pointer;
+}
+.names:hover {
+    color: rgb(88, 88, 88);
+}
+.names-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.buttons-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.blue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    padding: 5px;
+    color: rgb(0, 138, 223);
+    border-color: rgb(56, 178, 253);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.blue-button:hover {
+    transform: scale(1.1);
+}
+.seccion-derecha {
+    display: flex;
+    flex-direction: column;
+}
+.nombres-down {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
 }
