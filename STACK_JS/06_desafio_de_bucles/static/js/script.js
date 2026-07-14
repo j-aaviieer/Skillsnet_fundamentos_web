@@ -41,12 +41,24 @@ function barraCarga() {
 // Producto 5 - Descuento aplicado: 25%​​
 
 function descuentoProgresivo() {
-    let valorProducto = parseint(prompt("Ingrese el valor de el Producto"));
+    let descuento = 5;
+    for (let i = 1; i <= 5; i++) {
+        alert(`Producto ${i} - Descuento aplicado: ${descuento}%`)
+        descuento += 5;
+    }
 }
 
 // 🎮 Calcular el total de puntos en un videojuego: Un jugador gana 50 puntos cada vez que completa un nivel. Escribe un programa que calcule la puntuación total después de 5 niveles usando un bucle. Ejemplo de salida esperada:
 
 // Puntos acumulados: 250​​
+
+function calcularPuntos() {
+    let puntos = 0;
+    for (let i = 1; i <= 5; i++) {
+        puntos += 50;
+    } alert (`Puntos acumulados: ${puntos}`)
+}
+
 // 🔔 Contador de notificaciones en una app: Imagina que una aplicación de mensajería muestra un contador de notificaciones pendientes. Escribe un programa que muestre un mensaje con la cantidad de notificaciones pendientes y las marque como leídas una por una hasta llegar a 0. Ejemplo de salida esperada:
 
 // Tienes 5 notificaciones nuevas.
@@ -54,3 +66,11 @@ function descuentoProgresivo() {
 // ...
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.
+
+function contadorNotificaciones(){
+    let notificaciones = 5;
+    for(let i = notificaciones; i > 0; i--){
+        alert(`Tienes ${i} notificaciónes nuevas.`);
+    }
+    alert("No tienes notificaciónes pendientes.");
+}
