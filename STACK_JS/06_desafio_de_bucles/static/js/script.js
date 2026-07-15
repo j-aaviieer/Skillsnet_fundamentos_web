@@ -26,7 +26,6 @@ function barraCarga() {
         if(i < 100) {
             alert(`Cargando... ${i}%`)
         } else {
-            alert(`Cargando... ${i}%`)
             alert(`Carga completa.`)
         }
     }
@@ -41,10 +40,9 @@ function barraCarga() {
 // Producto 5 - Descuento aplicado: 25%​​
 
 function descuentoProgresivo() {
-    let descuento = 5;
+    let valorProducto = parseInt(prompt("Ingrese el valor de el producto"))
     for (let i = 1; i <= 5; i++) {
-        alert(`Producto ${i} - Descuento aplicado: ${descuento}%`)
-        descuento += 5;
+        alert(`Producto ${i} - Descuento aplicado: ${i * 5}% Valor final: ${valorProducto - (valorProducto * (i * 0.05))}`)
     }
 }
 
