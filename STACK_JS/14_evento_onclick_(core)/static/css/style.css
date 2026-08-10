@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f4f8;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(162, 155, 254);
+}
+
+.title {
+    color: white;
+    font-size: 1.8rem;
+}
+
+input {
+    background-color: white;
+    width: 500px;
+    padding: 15px;
+    border: solid 0px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.login {
+    background-color: rgb(108, 92, 231);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    border: solid 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding: 50px;
+}
+.section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 600px;
+    background-color: rgb(223, 223, 223);
+    box-shadow: 1px 1px 6px 6px rgb(216, 216, 216);
+}
+
+.likes {
+    background-color: rgb(255, 118, 117);
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    border: solid 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 350px;
+    background-color: rgb(223, 223, 223);
+    box-shadow: 1px 1px 6px 6px rgb(216, 216, 216);
+}
+.tarjeta-perfil p {
+    text-align: center;
+}
+.profile {
+    background-color: rgb(0, 206, 201);
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    border: solid 0;
+    text-decoration: none;
+    cursor: pointer;
+}
