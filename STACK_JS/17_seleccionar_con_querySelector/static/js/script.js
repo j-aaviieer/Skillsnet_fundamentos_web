@@ -26,14 +26,17 @@ debe cambiar su texto al momento de hacerle click
 debe activarse con un hover js cambiando el color del fondo
 */
 
-let button = document.getElementById("button");
+const botonCambiado = document.querySelector("#button")
 
-// Agregamos un evento 'click' al botón
-button.addEventListener("click", function () {
-    let textoBoton = button.textContent;
-    if(textoBoton == "Presioname!"){
-        this.innerText = "Me has presionado";
+botonCambiado.addEventListener("click", function() {
+    if(this.textContent === "Clickeame") {
+        this.textContent = "Me has clickeao!"
+        this.style.backgroundColor = "green"
+        this.style.color = "white"
     } else {
-        this.innerText = "Me has vuelto a presionar";
+        this.textContent = "Clickeame"
+        this.style.backgroundColor = "white"
+        this.style.color = "black"
     }
-});
+}
+)
