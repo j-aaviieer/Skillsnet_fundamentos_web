@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos onClick Core</title>
+    <title>Social like</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -14,52 +14,54 @@
         <div>
     </header>
     <main>
-        </section>
         <section class="section-left">
-            <div class="tarjeta">
-                <div>
-                    <img src="static/images/misato.png" alt="misato" class="profile-image">
-                </div>
-                <div>
-                    <h3>Misato</h3>
-                </div>
-                <div>
-                    <button class="profile" onclick="verPerfil()">Mi perfil</button>
-                </div>
-            </div>
-        </section>
-        <section class="section-right">
-            <div class="tarjeta-publicaciones">
-                <div class="publicaciones-izquierda">
-                    <h2>Rei</h2>
-                    <p>Acabo de configurar este nuevo bot de Discrod, cuéntame que opinan ustedes.</p>
-                </div>
-                <div class="publicaciones-derecha">
-                    <h3>0 like(s)</h3>
-                    <button class="profile" onclick="darLike()">Like</button>
-                </div>
-            </div>
-            <div class="tarjeta-publicaciones">
-                <div class="publicaciones-izquierda">
-                    <h2>Asuka</h2>
-                    <p>Acabo de leer este nuevo comic. Denle un vistazo.</p>
-                </div>
-                <div class="publicaciones-derecha">
-                    <h3>0 like(s)</h3>
-                    <button class="profile" onclick="darLike()">Like</button>
-                </div>
-            </div>
-            <div class="tarjeta-publicaciones">
-                <div class="publicaciones-izquierda">
-                    <h2>Shinji</h2>
-                    <p>No puedo dejadr de escuchar este albun. ¿A quién más le gusta?</p>
-                </div>
-                <div class="publicaciones-derecha">
-                    <h3>0 like(s)</h3>
-                    <button class="profile" onclick="darLike()">Like</button>
-                </div>
-            </div>
-        </section>
+    <div class="tarjeta">
+        <div>
+            <img src="static/images/misato.png" alt="misato" class="profile-image">
+        </div>
+        <div>
+            <h3>Misato</h3>
+        </div>
+        <div>
+            <button class="profile" onclick="verPerfil()">Mi perfil</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-right">
+    <div class="tarjeta-publicaciones">
+        <div class="publicaciones-izquierda">
+            <h3>Rei</h3>
+            <p>Acabo de configurar este nuevo <a href="#">bot de Discord</a>, cuéntame qué opinan ustedes.</p>
+        </div>
+        <div class="publicaciones-derecha">
+            <h4 id="reiLikes">0 like(s)</h4>
+            <button class="like-button" id="btnRei">Like</button>
+        </div>
+    </div>
+
+    <div class="tarjeta-publicaciones">
+        <div class="publicaciones-izquierda">
+            <h3>Asuka</h3>
+            <p>Acabo de leer este <a href="#">nuevo comic</a>. Denle un vistazo.</p>
+        </div>
+        <div class="publicaciones-derecha">
+            <h4 id="asukaLikes">0 like(s)</h4>
+            <button class="like-button" id="btnAsuka">Like</button>
+        </div>
+    </div>
+
+    <div class="tarjeta-publicaciones">
+        <div class="publicaciones-izquierda">
+            <h3>Shinji</h3>
+            <p>No puedo dejar de escuchar este <a href="#">álbum</a>. ¿A quién más le gusta?</p>
+        </div>
+        <div class="publicaciones-derecha">
+            <h4 id="shinjiLikes">0 like(s)</h4>
+            <button class="like-button" id="btnShinji">Like</button>
+        </div>
+    </div>
+</section>
     </main>
     <script src="static/js/script.js"></script>
 </body>
